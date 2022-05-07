@@ -7,11 +7,13 @@
         $('.client').slick({
 
             centerPadding: '60px',
+            centerMode: true,
             arrows: true,
             infinite: true,
-            speed: 300,
-            slidesToShow: 2,
+            speed: 500,
+            slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay:true,
             responsive: [
                 {
                     breakpoint: 1024,

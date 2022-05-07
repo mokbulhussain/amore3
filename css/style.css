@@ -40,6 +40,12 @@
     src: url(../fonts/AvenirLTStd-Light.otf);
 }
 
+
+@font-face {
+    font-family: AvenirMedium;
+    src: url(../fonts/AvenirLTStd-Medium.otf);
+}
+
 @font-face {
     font-family: AvenirBlack;
     src: url(../fonts/AvenirLTStd-Black.otf);
@@ -55,20 +61,7 @@
     src: url(../fonts/Gilroy-Bold.otf);
 }
 
-@font-face {
-    font-family: PoppinsRegular;
-    src: url(../fonts/Poppins-Regular.ttf);
-}
 
-@font-face {
-    font-family: PoppinsBold;
-    src: url(../fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: PoppinsSemiBold;
-    src: url(../fonts/Poppins-SemiBold.ttf);
-}
 
 
 /* 2. Theme default css */
@@ -147,7 +140,6 @@ h6 {
     margin-top: 0px;
     font-style: normal;
     font-weight: 400;
-    text-transform: normal;
 }
 
 h1 a,
@@ -280,7 +272,7 @@ header {
 }
 
 .navbar-top {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .navbar-brand img {
@@ -336,7 +328,9 @@ header {
 
 /* 4. Header Banner */
 
-.banner {}
+.banner-content{
+    margin-top: 100px;
+}
 
 .banner-content h1 {
     font-size: 80px;
@@ -349,9 +343,8 @@ header {
     color: #ffffff;
     font-size: 18px;
     font-family: AvenirRoman;
-    margin-top: 0px;
-    margin-bottom: 40px;
-    margin-top: 16px;
+    margin-bottom: 60px;
+    margin-top: 30px;
     line-height: 28px;
 }
 
@@ -368,6 +361,13 @@ header {
 .banner-content a.success-story{
     background: transparent;
     text-decoration: underline;
+    margin-left: -20px;
+}
+
+.banner-content a.success-story:hover{
+
+  box-shadow: none;
+  text-decoration: none;
 }
 
 .banner-colum {
@@ -383,12 +383,11 @@ header {
 
 section.feature {
     background: #ffffff;
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
 .feature-area {
     position: relative;
-    background: #e8e8e8;
 }
 
 .feature-shape1 {
@@ -400,30 +399,83 @@ section.feature {
 .feature-shape2 {
     position: absolute;
     right: 200px;
-    top: 40px;
+    top: 0px;
 }
 
 .feature-shape3 {
     position: absolute;
-    top: 90px;
-    right: 147px;
+    top: 50px;
+    right: 100px;
+
 }
 
 .feature-list {
-    background: #7f40d7;
+    background: transparent;
     text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 99%, 93% 97%, 53% 76%, 7% 98%, 0 100%);
     border-radius: 24px;
+    margin-top: 130px;
+    /* background: none; */
+    padding: 60px 33px 80px 33px;
 }
 
-.feature-list:hover {}
+.feature-list:hover {
+    background: #ffffff;
+    transform: translateY(-45px);
+    transition: .5s;
 
-.feature-list span {
-    width: 44px;
-    height: 44px;
-    background: #F6F9FF;
+}
+.feature-list-colum:hover{
+    filter: drop-shadow( 30px 30px 90px rgba(8, 36, 80, .16));
+}
+
+.feature-list-colum:hover .arrow1{
+   display: block;
+}
+.feature-list-colum:hover .arrow2{
+    display: block;
+ }
+ 
+
+.feature-list2 {
+    position: relative;
+}
+
+
+.arrow1 {
+    position: absolute;
+    top: 35px;
+    left: -150px;
+    display: none;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 35px;
+    right: -99px;
+    display: none;
+}
+
+.feature-list img {
+    background-color: #F6F9FF;
+    padding: 10px;
     border-radius: 50px;
-    display: inline-block;
+}
+
+.feature-list h3 {
+    color: #3B406C;
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 14px;
+    font-family: 'AvenirRoman';
+}
+
+.feature-list p {
+    color: #120253;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 22px;
+    font-family: 'AvenirRoman';
 }
 
 
@@ -431,7 +483,7 @@ section.feature {
 
 section.relationship {
     background: #ffffff;
-    padding: 110px 0px 0px 0px;
+   margin-top: 110px;
 }
 
 .relationship-container {
@@ -454,7 +506,7 @@ section.relationship {
 .relationship-content h2 {
     color: #3B406C;
     font-size: 44px;
-    font-family: GeorgiaBold;
+    font-family: 'AVENIRLIGHT';
     line-height: 54px;
     margin-top: 14px;
 }
@@ -462,20 +514,20 @@ section.relationship {
 .relationship-content p {
     color: #3B406C;
     font-size: 16px;
-    font-family: PoppinsRegular;
+    font-family: 'AVENIRROMAN';
     line-height: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     margin-top: 20px;
 }
 
 .relationship-content a {
-    border-radius: 82px;
+    border-radius: 16px;
     font-size: 16px;
     padding: 10px 24px;
     text-decoration: none;
     font-family: PoppinsSemiBold;
     color: #ffffff;
-    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
 }
 
 .relationship-content a:hover {
@@ -484,6 +536,9 @@ section.relationship {
 
 
 /* 6. How it work */
+.how-work{
+    margin-top: 130px;
+}
 
 .how-work-area {
     background-image: url(../img/feature/how_work.png);
@@ -501,7 +556,7 @@ section.relationship {
 .how-work-content h2 {
     color: #3B406C;
     font-size: 44px;
-    font-family: GeorgiaBold;
+    font-family: 'AVENIRLIGHT';
     line-height: 54px;
     margin-top: 14px;
 }
@@ -509,20 +564,21 @@ section.relationship {
 .how-work-content p {
     color: #3B406C;
     font-size: 16px;
-    font-family: PoppinsRegular;
+    font-family: 'AVENIRROMAN';
     line-height: 26px;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin-bottom: 44px;
+    margin-top: 24px;
 }
 
 .how-work-content a {
-    border-radius: 82px;
+   
     font-size: 16px;
     padding: 10px 24px;
     text-decoration: none;
     font-family: PoppinsSemiBold;
     color: #ffffff;
-    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
+    border-radius: 16px;
 }
 
 .how-work-content a:hover {
@@ -532,17 +588,35 @@ section.relationship {
 
 /* 6. pricing */
 
-.price {}
+.price {
+    margin-top: 120px;
+}
 
 .price-heading {
     text-align: center;
 }
+.price-heading h2 {
+    color: #3B406C;
+    font-size: 44px;
+    line-height: 54px;
+    font-family: 'AVENIRLIGHT';
+}
+
+.price-heading p {
+    color: #3B406C;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 20px;
+    font-family: 'AvenirRoman';
+}
+
 
 .price-list {
     text-align: center;
     background: #F8FAFF;
-    padding: 44px 60px;
+    padding: 44px 60px 60px 60px;
     border-radius: 14px;
+    margin-top: 50px;
 }
 
 .price-list:hover {
@@ -560,17 +634,20 @@ section.relationship {
     font-size: 24px;
     color: #3B406C;
     line-height: 34px;
+    font-family: 'AvenirMedium';
 }
 
 .price-list h4 {
     color: #3B406C;
     font-size: 16px;
     line-height: 26px;
+    font-family: 'AvenirRoman';
+    margin-top: 16px;
 }
 
 .price-list ul {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .price-list ul li {
@@ -581,26 +658,35 @@ section.relationship {
     font-size: 16px;
     line-height: 26px;
     margin-left: 10px;
+    font-family: 'AVENIRROMAN';
+    color: #3B406C;
 }
 
 .price-list h5 {
     font-size: 44px;
     line-height: 54px;
-    margin-top: 33px;
+    margin-top: 36px;
+    font-family: 'AvenirLight';
+    color: #3B406C;
 }
 
 .price-list p {
-    margin-top: 10px;
+    margin-top: 24px;
 }
 
 .price-list p a {
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     color: #3B406C;
+    font-family: 'GilroySemiBold';
+    line-height: 26px;
 }
 
 
 /* 6. How it work */
+section#social-work {
+    margin-top: 130px;
+}
 
 .social-work-area {
     background-image: url(../img/feature/social_work.png);
@@ -623,7 +709,7 @@ section.relationship {
 .social-work-content h2 {
     color: #3B406C;
     font-size: 44px;
-    font-family: GeorgiaBold;
+  font-family: 'AvenirLight';
     line-height: 54px;
     margin-top: 14px;
 }
@@ -633,18 +719,20 @@ section.relationship {
     font-size: 16px;
     font-family: PoppinsRegular;
     line-height: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     margin-top: 20px;
+    padding-right: 85px;
 }
 
 .social-work-content a {
-    border-radius: 82px;
     font-size: 16px;
     padding: 10px 24px;
     text-decoration: none;
-    font-family: PoppinsSemiBold;
+    font-family: 'GilroySemiBold';
     color: #ffffff;
-    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
+    background: linear-gradient(180deg, #FFAD32 0%, #FF6F44 100%);
+    border-radius: 16px;
+    line-height: 26px;
 }
 
 .social-work-content a:hover {
@@ -652,82 +740,16 @@ section.relationship {
 }
 
 
-/* 6. LiveChat */
-
-section.livechat {
-    background: #ffffff;
-    padding: 0px 0px 16px 0px;
-    margin-top: -50px;
-}
-
-.livechat-container {
-    padding-left: 56px;
-    padding-right: 56px;
-}
-
-.livechat-img img {
-    width: 100%;
-}
-
-.livechat-img {
-    padding-left: 100px;
-}
-
-.livechat-content h2 {
-    color: #3B406C;
-    font-size: 44px;
-    font-family: 'GeorgiaBold';
-    margin-top: -50px;
-    line-height: 54px;
-}
-
-.livechat-content p {
-    color: #3B406C;
-    font-size: 16px;
-    font-family: 'PoppinsRegular';
-    line-height: 26px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-}
-
-.livechat-content a {
-    border-radius: 82px;
-    font-size: 16px;
-    padding: 10px 24px;
-    text-decoration: none;
-    font-family: PoppinsRegular;
-    color: #ffffff;
-    background-image: linear-gradient(#F54EB4, #F54EB4);
-}
-
-.livechat-content a:hover {
-    background-image: linear-gradient(#ff42a6, #e19dc6);
-}
-
-.livechat-item-check li {
-    margin-top: 16px;
-}
-
-.livechat-item-check li img {
-    width: 30px;
-    margin-right: 10px;
-}
-
-.livechat-item-check li span {
-    color: #3B406C;
-    font-size: 16px;
-    font-family: 'PoppinsSemiBold';
-}
 
 
-/* 7. Client */
+/* 6. Client */
 
-section.client-section {
-    background-image: url('../img/testimonial/client_bg.png');
-    background-size: 100% 100%;
+.client-section {
+    background-image: url('../img/testimonial/bg_client.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    height: 791px;
+    margin-top: 130px;
+    height: 608px;
 }
 
 .client-heading {
@@ -749,6 +771,9 @@ section.client-section {
     line-height: 54px;
     margin-top: 18px;
 }
+.client{
+    margin-top: 150px;
+}
 
 .slick-track {
     padding-bottom: 30px;
@@ -759,7 +784,20 @@ section.client-section {
     margin-left: 20px;
     margin-right: 10px;
     padding: 40px 20px 60px 60px;
-    border-radius: 20px;
+
+opacity: 0.24;
+box-shadow: 30px 30px 90px rgba(8, 36, 80, 0.06);
+border-radius: 24px;
+transform: rotate(10deg);
+}
+[tabindex="-1"]{
+    transform: rotate(-10deg);
+}
+
+.client-content.slick-slide.slick-current.slick-active.slick-center {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .5s;
 }
 
 .client-content:hover {
@@ -809,12 +847,12 @@ section.client-section {
 }
 
 .slick-prev {
-    left: -10px;
+    left: 31%;
     z-index: 1;
 }
 
 .slick-next {
-    right: 15px;
+    right: 32%;
     z-index: 1;
 }
 
@@ -845,65 +883,22 @@ section.client-section {
 
 section.newsletter {
     background: #ffffff;
-    padding: 82px 0px 240px 0px;
+    margin-top: 270px;
+}
+.newsletter-area {
+    background: #418BFF;
+    position: relative;
+    padding: 100px 0px;
 }
 
-.newsletter-img img {
-    width: 100%;
+.newsletter-woman {
+    position: absolute;
+    /* top: -129px; */
+    bottom: 0px;
+    right: 145px;
 }
 
-.newsletter-content {
-    padding-left: 96px;
-}
 
-.newsletter-content h4 {
-    color: #F669D6;
-    font-size: 20px;
-    font-family: 'PoppinsLight';
-    line-height: 20px;
-}
-
-.newsletter-content h2 {
-    color: #3B406C;
-    font-size: 44px;
-    font-family: 'GeorgiaBold';
-    line-height: 54px;
-    margin-top: 16px;
-}
-
-.newsletter-content p {
-    color: #3B406C;
-    font-size: 16px;
-    font-family: 'PoppinsRegular';
-    line-height: 26px;
-    margin-bottom: 44px;
-    margin-top: 20px;
-}
-
-.newsletter-content a {
-    border-radius: 82px;
-    font-size: 16px;
-    padding: 10px 24px;
-    text-decoration: none;
-    font-family: 'PoppinsRegular';
-    color: #ffffff;
-    background: linear-gradient(180deg, #F769D6 0%, #BE349E 100%);
-}
-
-.newsletter-content a:hover {
-    box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 10%);
-}
-
-.newsletter-content a.contact-us {
-    gradient(180deg,
-    #6546CB -2.54%,
-    #974EF5 98.71%);
-    margin-left: 16px;
-}
-
-.newsletter-content a.contact-us:hover {
-    box-shadow: 0px 20px 40px 0 rgb(72 10 45 / 10%);
-}
 
 
 /* 10. Footer */
