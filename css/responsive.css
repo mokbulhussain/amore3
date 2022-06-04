@@ -1,0 +1,198 @@
+@media only screen and (max-width: 1199.98px) {
+    .banner-img img {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .relationship-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .how-work-area {
+       
+        background-size: 550px;
+        margin-left: 0px;
+    }
+
+    .social-work-content h2 {
+        font-size: 40px;
+    }
+
+    .social-work-area {
+        background-size: 550px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+
+    div#navbarSupportedContent {
+        background: #ffffff;
+        position: absolute;
+        width: 100%;
+        top: 65px;
+        left: 0px;
+    }
+    .navbar-toggler-icon {
+
+      	border-radius: 2px;
+  	}
+    .nav-menu {
+      	align-items: left;
+      	display: inline;
+    }
+    .nav-menu-right li a {
+		margin-left: 12px;
+    }
+
+    .banner-content h1 {
+        font-size: 60px;
+    }
+
+    .banner-content a {
+        padding: 17px 22px;
+        margin-right: 14px;
+    }
+
+    .feature-list {
+        padding: 60px 10px 80px 10px;
+    }
+    .feature-list h3 {
+        font-size: 22px;
+    
+    }
+    .feature-list p {
+        text-align: left;
+    }
+
+    .relationship-content h2 {
+        font-size: 32px;
+    }
+
+    .how-work-area {
+        background-size: 430px;
+        margin-left: 0px;
+    }
+
+    .how-work-content {
+        padding-right: 80px;
+    }
+
+    .how-work-content h2 {
+        font-size: 30px;
+    }
+
+    .price-list {
+        padding: 44px 10px 60px 10px;
+    }
+
+    .social-work-content {
+        padding-left: 0px;
+    }
+    .social-work-area {
+        background-size: 450px !important;
+    }
+
+    .social-work-content {
+        padding-left: 80px;
+    }
+
+    .social-work-content h2 {
+        font-size: 30px;
+    }
+
+    .social-work-content p {
+        padding-right: 0px;
+    }
+
+    .newsletter-area {
+        padding: 100px 20px;
+    }
+    .newsletter-woman {
+        right: 10px;
+    }
+    
+    
+
+}
+
+
+@media only screen and (max-width: 767.98px) {
+
+    header {
+        height: 1070px;
+    }
+
+    .banner-img img {
+        margin-top: 0px;
+    }
+
+    section.feature {
+        margin-top: 50px;
+    }
+
+    .arrow2 {
+
+        display: none;
+    }
+
+    .arrow1 {
+        position: absolute;
+        top: -30px;
+        left: -150px;
+    }
+
+    .feature-shape2 {
+        top: -100px;
+    }
+
+    .feature-shape3 {
+
+        right: 100px;
+    }
+
+    .feature-list {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .feature-list {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .relationship-colum {
+        padding-right: 0px;
+    }
+    .how-work-area {
+        background-size: contain;
+
+    }
+
+    .how-work-content {
+        margin-top: 700px;
+    }
+
+    .price {
+        margin-top: 180px;
+    }
+
+    .social-work-area {
+        background-size: contain !important;
+    }
+
+    .social-work-content {
+        margin-top: 700px;
+    }
+
+    .newsletter-woman {
+        position: relative;
+        bottom: -100px;
+        right: -60px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .newsletter-woman {
+        position: relative;
+        bottom: -100px;
+        right: 5px;
+        width: 100%;
+    }
+}
