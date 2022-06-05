@@ -28,8 +28,29 @@
         background: #ffffff;
         position: absolute;
         width: 100%;
-        top: 65px;
+        top: 82px;
         left: 0px;
+        padding: 10px 0px;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-image: url(../img/icon/menu.svg);
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .navbar-toggler-icon {
+
+      	border-radius: 2px;
+  	}
+    .nav-menu {
+      	align-items: left;
+      	display: inline;
+    }
+    .nav-menu-right li a {
+		margin-left: 0px;
     }
     .navbar-toggler-icon {
 
@@ -189,10 +210,183 @@
 }
 
 @media only screen and (max-width: 575.98px) {
+    header {
+        height: 880px;
+    }
+    .banner-content {
+        margin-top: 40px;
+        text-align: center;
+        
+    }
+    .nav-menu-right li a {
+        margin-left: -6px;
+    }
+    .banner-content a {
+        padding: 10px 14px;
+        margin-right: 0px;
+    }
+    .nav-menu li a {
+        color: #3B406C !important;
+    }
     .newsletter-woman {
         position: relative;
         bottom: -100px;
         right: 5px;
         width: 100%;
     }
+    .banner-content h1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .banner-content p {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0px 24px;
+        margin-top: 20px;
+        margin-bottom: 46px;
+    }
+    
+    .banner-content a.success-story {
+        margin-left: 10px;
+    }
+    .feature-shape1 {
+        top: -50px;
+    }
+    .feature-shape2 {
+        right: 50px;
+    }
+    .arrow1 {
+        display: none;
+    }
+
+    .feature-list-colum:hover .arrow1 {
+        display: none;
+    }
+
+    .feature-list-colum:hover .arrow2 {
+        display: none;
+    }
+
+    .how-work {
+        margin-top: -28px;
+    }
+    .price-list{
+        box-shadow: 0px 0px 40px 0px rgb(8 36 80 / 6%);
+    }
+
+    section.relationship {
+        margin-top: 68px;
+    }
+    section.feature {
+        margin-top: 26px;
+    }
+    .feature-list {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .feature-list p {
+        text-align: center; 
+    }
+    .feature-list h3 {
+        font-size: 18px;
+    }
+    .relationship-content {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .relationship-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .how-work-content {
+        text-align: center;
+        margin-top: 600px;
+    }
+    .how-work-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+     
+    .how-work-content {
+        padding-right: 0px;
+    }
+    .price {
+        margin-top: 192px;
+    }
+
+    .price-heading h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .price-list {
+    text-align: center;
+    padding: 20px 60px 30px 60px;
+    margin-top: 20px;
+    height: 410px;
+    box-shadow: -10px 20px 60px rgb(41 21 159 / 8%);
+    }
+    .price-list:hover {
+        background-image: none;
+    }
+    .price-list h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    section#social-work {
+        margin-top: -60px;
+    }
+    .social-work-content h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .social-work-content {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .client-heading h2 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-top: 110px;
+        margin-bottom: -100px;
+    }
+
+    .client-content {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 40px 0px 40px 0px;
+       
+    }
+    section.newsletter {
+        margin-top: 90px;
+    }
+    .newsletter-content {
+        text-align: center;
+    }
+    .newsletter-content h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    footer {
+        margin-top: 24px;
+    }
+    .footer-part1 {
+        text-align: center;
+    }
+
+    .footer-part h3 {
+    
+        margin-top: 40px;
+    }
+    .footer-part {
+        text-align: center;
+    }
+    .footer-part4.footer-part {
+        margin-top: 30px;
+    }
+    .footer-subscribe {
+        width: 256px;
+        margin: 0px auto;
+    }
+    
+
 }

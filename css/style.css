@@ -299,6 +299,9 @@ header {
 .nav-menu li a:hover {
     font-weight: bold;
 }
+a.nav-link:visited:active {
+    color: red !important;
+}
 
 .nav-menu-right li a {
     color: #ffffff;
